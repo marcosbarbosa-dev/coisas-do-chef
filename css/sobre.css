@@ -19,7 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 55%;
     background-color: #1a1a1a71;
 }
 #sobre .sobreMimLeft h2 {
