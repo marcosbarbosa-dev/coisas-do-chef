@@ -1,0 +1,125 @@
+.modalBG {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(161, 161, 161, 0.753);
+    z-index: 1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-height: 100%;
+    max-width: 80vw;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.171);
+    z-index: 2;
+}
+.lineClose {
+    text-align: center;
+}
+.lineClose h2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #252525;
+    margin: 12px 20px;
+}
+.lineClose img {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+    width: 20px;
+    opacity: .6;
+}
+.modalContent {
+    position: relative;
+    display: flex;
+    border: 0.01em solid rgb(214, 214, 214);
+    border-left: 0;
+    border-right: 0;
+    padding: 10px;
+}
+.displayModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quantidade {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
+}
+
+#aviso {
+    font-size: 12px;
+    margin-left: 15px;
+    color: #868686;
+}
+#inputQnt {
+    max-width: 35px;
+    padding: 3px;
+    border: 1px solid #dedede;
+    outline: 0;
+    text-align: center;
+}
+.modalContent p {
+    font-size: 14px;
+    max-width: 100%;
+    padding: 5px 3%;
+    color: #2c2c2c;
+}
+#valor {
+    color: rgb(116, 116, 116);
+}
+.btnCloseModal {
+    display: flex;
+    padding: 10px 10px 10px 4%;
+    justify-content: end;
+}
+#fazerPedidoBtn {
+    cursor: pointer;
+    background-color: #0ae215;
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px;
+    border: 0;
+}
+@media (max-width:1125px) {
+    .modalContent {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .modalContent img {
+        width: 200px;
+        margin: 10px auto;
+    }
+}
+@media (max-width:700px) {
+    .modal {
+        max-height: 100%;
+        width: 85vw;
+        padding: 0 10px;
+    }
+    .modalContent p {
+        padding: 5px 1% 5px 1%;
+    }
+    .modalContent {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

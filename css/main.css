@@ -1,0 +1,129 @@
+header {
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background-image: url("../assets/imagens/background/home-background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.top {
+    padding: 40px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    cursor: pointer;
+    max-width: 170px;
+}
+#navIcon {
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+    width: 30px;
+}
+#max-large ul {
+    list-style: none;
+
+}
+#max-large li {
+    display: inline-block;
+    transition: .4s;
+}
+#max-large li:hover {
+    color: rgb(0, 0, 0);
+}
+#max-large a {
+    display: block;
+    padding: 2px 10px;
+    color: #fff;
+    border-radius: 20px;
+    margin: 12px;
+    border: 1px solid #fff;
+    transition: .4s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Calibri', sans-serif;
+}
+#max-large a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+}
+#topInfo {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#topInfo img {
+    max-width: 400px;
+}
+.topInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+.topInfoContent h2 {
+    font-family: 'rage';
+    font-weight: normal;
+    color: #ffa600;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.253);
+}
+.topInfoContent p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    max-width: 300px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.096);
+    font-family: 'Calibri', sans-serif;
+}
+.topInfoContent .btnDirect{
+    cursor: pointer;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .4s;
+    text-decoration: none;
+    font-family: 'Calibri', sans-serif;
+}
+.btnDirect:hover {
+    background-color: #fff;
+    color: #000;
+}
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.scroll img {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+
+    animation-name: setaBaixo;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes setaBaixo {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 12px;
+    }
+}

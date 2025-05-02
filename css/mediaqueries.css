@@ -1,0 +1,123 @@
+@media (max-width:825px){
+    #navIcon {
+        display: block;
+    }
+    #navIcon.active {
+        position: fixed;
+        right: 35px;
+    }
+    #max-large {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #2c2c2c;
+        z-index: 1;
+        opacity: 0;
+        transition: .4;
+    }
+    #max-large.active {
+        display: block;
+        opacity: 1;
+    }
+    #max-large ul {
+        margin-top: 80px;
+        height: 100;
+    }
+    #max-large li {
+        display: flex;
+        flex-direction: column;
+    }
+    #max-large a {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        width: 100vw;
+        margin: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .top {
+        padding: 20px 35px;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.575), transparent);
+    }
+    #topInfo {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .topInfoContent {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+    .sobreMimLeft {
+        display: none;
+    }
+    .sobreMimOutContent {
+        display: block;
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+    .preparoItemContent {
+        flex-direction: column;
+    }
+    .preparoItemContent img {
+        width: 100%;
+    }
+    .preparoItemContentText h3 {
+        margin-top: 15px;
+        margin-left: 0;
+    } 
+    .preparoItemContentText p {
+        margin-left: 0;
+    } 
+    .preparoItemContentTextRight p {
+        margin-bottom: 15px;
+    }
+    .preparoItemContent {
+        background-color: rgb(240, 240, 240);
+    }
+    .showCard {
+        display: block;
+    }
+    .showCard p {
+        background-color: #4d4d4d54;
+        height: 25%;
+        top: 71%;
+        width: 235px;
+        left: 10px;
+    }
+    .contato {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media (max-width:575px) {
+    #logo {
+        max-width: 140px;
+    }
+    #topInfo img {
+        margin-top: 45px;
+        max-width: 75%;
+    }
+    .topInfoContent h2 {
+        font-size: 40px;
+    }
+    .topInfoContent p {
+        font-size: 25px;
+    }
+    .topInfoContent .btnDirect {
+        margin-top: 25px;
+        font-size: 13px;
+    }
+    .preparoItemContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
